@@ -30,10 +30,6 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "6.4.9",
-    "@storybook/builder-webpack5": "^6.4.9",
-    "@storybook/manager-webpack5": "^6.4.9",
-    "@storybook/react": "6.4.9",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
@@ -54,7 +50,6 @@
     "lint-staged": "^12.1.4",
     "plop": "^3.0.5",
     "prettier": "^2.4.1",
-    "storybook-addon-next-router": "^3.0.8",
     "typescript": "^4.4.3",
     "webpack": "5"
   }
