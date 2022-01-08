@@ -23,4 +23,5 @@ export const Body = styled.div`
     font-size: var(--medium);
     line-height: var(--medium);
   }
+  padding: 0 var(--medium);
 `
