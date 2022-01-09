@@ -38,9 +38,9 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
           place.description?.text ||
           'A simple project to show in a map the places in Cape Verde and show more information and photos when clicked.'
         }
-        canonical=""
+        canonical="https://explore-cv.vercel.app/"
         openGraph={{
-          url: '',
+          url: 'https://explore-cv.vercel.app/',
           title: `${place.name} - Explore CV`,
           description:
             place.description?.text ||
