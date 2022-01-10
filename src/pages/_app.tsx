@@ -20,6 +20,10 @@ function App({ Component, pageProps }: AppProps) {
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossOrigin=""
         />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
+        />
         <meta name="theme-color" content="#06092B" />
         <meta
           name="description"

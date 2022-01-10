@@ -1,5 +1,6 @@
 import { useRouter } from 'next/dist/client/router'
 import { MapContainer, TileLayer, Marker, MapConsumer } from 'react-leaflet'
+import MarkerClusterGroup from 'react-leaflet-markercluster'
 
 import * as S from './styles'
 
@@ -73,22 +74,24 @@ const Map = ({ places }: MapProps) => {
         </MapConsumer>
         <CustomTileLayer />
 
-        {places?.map(({ id, slug, name, location }) => {
-          const { latitude, longitude } = location
+        <MarkerClusterGroup>
+          {places?.map(({ id, slug, name, location }) => {
+            const { latitude, longitude } = location
 
-          return (
-            <Marker
-              key={`place-${id}`}
-              position={[latitude, longitude]}
-              title={name}
-              eventHandlers={{
-                click: () => {
-                  router.push(`/place/${slug}`)
-                }
-              }}
-            />
-          )
-        })}
+            return (
+              <Marker
+                key={`place-${id}`}
+                position={[latitude, longitude]}
+                title={name}
+                eventHandlers={{
+                  click: () => {
+                    router.push(`/place/${slug}`)
+                  }
+                }}
+              />
+            )
+          })}
+        </MarkerClusterGroup>
       </MapContainer>
     </S.MapWrapper>
   )
